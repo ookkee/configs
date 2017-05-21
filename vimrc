@@ -31,8 +31,8 @@ Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'Lokaltog/vim-easymotion'
 "Plugin 'scrooloose/syntastic'
-Plugin 'scrooloose/nerdtree'
-Plugin 'jistr/vim-nerdtree-tabs'
+"Plugin 'scrooloose/nerdtree'
+"Plugin 'jistr/vim-nerdtree-tabs'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -99,5 +99,13 @@ map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
 
 " NERDTree shortcut
+" Is now netrw shortcut
 let mapleader = ","
-nmap <leader>ne :NERDTree<cr>
+nmap <leader>ne :Vex<cr>
+nmap <leader>e :Explore<cr>
+
+" Resize splits shortcut
+nmap <leader>k :res -2<cr>
+nmap <leader>j :res +2<cr>
+nmap <leader>h :vertical resize -5<cr>
+nmap <leader>l :vertical resize +5<cr>
